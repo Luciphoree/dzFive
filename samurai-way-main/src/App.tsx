@@ -1,39 +1,33 @@
 import React from 'react';
 import './App.css';
+import {Accordion} from "./components/Accordion/Accordion";
+import {Rating} from "./components/Rating/Rating";
 
-function App() {
+function App(props: any) {
+    console.log("Render")
+
     return (
-        <div className="App">
-            Hello, samurai! Let's go!
+        <div className = "App">
+            <AppTitle title = {'My SPA!'} />
+            <Rating value = { 3 } />
+            <Accordion titleValue = {'Menu'} collapsedMenu={false} />
+            <Accordion titleValue = {'Users'} collapsedMenu={true} />
         </div>
     );
 }
 
 
-function Rating() {
-    return (
-        <>
-            <div>start</div>
-            <div>start</div>
-            <div>start</div>
-            <div>start</div>
-            <div>start</div>
-        </>
+type AppTitlePropsType = {
+    title: string
+}
+
+function AppTitle(props: AppTitlePropsType){
+    console.log("Rendering AppTitle")
+
+    return(
+        <div>{props.title}</div>
     )
 }
 
-function Accordion(){
-    return (
-        <>
-            <h3>Меню</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-        </>
-    )
-}
+
 export default App;
