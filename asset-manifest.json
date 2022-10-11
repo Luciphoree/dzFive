@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dzFive/static/css/main.2b1968bc.css",
+    "main.js": "/dzFive/static/js/main.b332892d.js",
+    "index.html": "/dzFive/index.html",
+    "main.2b1968bc.css.map": "/dzFive/static/css/main.2b1968bc.css.map",
+    "main.b332892d.js.map": "/dzFive/static/js/main.b332892d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b1968bc.css",
+    "static/js/main.b332892d.js"
+  ]
+}
